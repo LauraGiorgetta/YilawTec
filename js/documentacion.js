@@ -12,6 +12,7 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('resize', () => {
     HeightNav();
+    LateralNav();
 })
 
 function LateralNav() {
