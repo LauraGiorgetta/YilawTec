@@ -1,23 +1,28 @@
 //Efecto cambiar con scroll
+const h1 = document.querySelector('h1');
 
 if (window.innerWidth > 1040) {
-    document.querySelector('h1').className = 'grande';
+    h1.className = 'grande';
 }
 scrollFunction();
 window.addEventListener('resize', function () {
     if (window.innerWidth > 1400) {
         document.querySelector('header').style.padding = '1.5rem 8rem';
-        document.querySelector('h1').style.fontSize = '3rem';
-        document.querySelector('h1').className = 'grande';
+        h1.style.fontSize = '3rem';
+        h1.className = 'grande';
 
     } else if (window.innerWidth > 1040) {
         document.querySelector('header').style.padding = '1.5rem 4rem';
+        h1.style.fontSize = '3rem';
+        h1.className = 'grande';
     } else if (window.innerWidth < 380) {
         document.querySelector('header').style.padding = '0 2rem';
-        document.querySelector('.xmenu').style.right = '2rem'
+        document.querySelector('.xmenu').style.right = '2rem';
+        h1.style.fontSize = '2rem';
+        h1.className = '';
     }
     else {
-        document.querySelector('h1').className = '';
+        h1.className = '';
 
     }
     scrollFunction();
@@ -29,16 +34,17 @@ function scrollFunction() {
 
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 document.querySelector('header').style.padding = '0 8rem';
-                document.querySelector('h1').style.fontSize = '2rem';
-                document.querySelector('h1').className = '';
+                h1.style.fontSize = '2rem';
+                h1.className = '';
             } else if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.querySelector('h1').className = 'mediano';
-                document.querySelector('h1').style.fontSize = '2.5rem';
+                h1.className = 'mediano';
+                h1.style.fontSize = '2.5rem';
+                h1.className = '';
 
             } else {
                 document.querySelector('header').style.padding = '1.5rem 8rem';
-                document.querySelector('h1').style.fontSize = '3rem';
-                document.querySelector('h1').className = 'grande';
+                h1.style.fontSize = '3rem';
+                h1.className = 'grande';
             }
         };
         console.log("1400")
@@ -76,7 +82,7 @@ function scrollFunction() {
     }
 
     else {
-        document.querySelector('h1').style.fontSize = '2rem';
+        h1.style.fontSize = '2rem';
         document.querySelector('header').style.padding = '0 4rem';
         window.onscroll = () => { }
     }
@@ -108,7 +114,7 @@ function menu(x) {
     }
 }
 
-window.addEventListener('resize', function () {
+window.addEventListener('resize', () => {
     if (window.innerWidth > 1040) {
         document.querySelector('.xmenu').classList.add('cruz');
         nav.className = "stroke active";

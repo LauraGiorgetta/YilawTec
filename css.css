@@ -21,17 +21,16 @@ body {
 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(127, 179, 213, 0.5);
-    border-radius     : 10px;
+    background-color: #10171d;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius     : 10px;
-    -webkit-box-shadow: inset 0 0 6px #7FB3D5;
+    -webkit-box-shadow: inset 0 0 10px #7FB3D5;
 }
 
 /*Fin Scroll Bar*/
 /* NAVIGATION */
-
 header nav ul {
     list-style: none;
     text-align: center;
@@ -95,7 +94,7 @@ nav.stroke ul li a:hover:after {
 /*header*/
 header {
     position       : fixed;
-    z-index        : 1;
+    z-index        : 11;
     background     : #212F3C;
     background     : -moz-linear-gradient(90deg, #10171d 0%, #2f4355 35%, #10171d 100%);
     background     : -webkit-linear-gradient(90deg, #10171d 0%, #2f4355 35%, #10171d 100%);
@@ -142,9 +141,12 @@ h1.mediano::before {
 
 /*Comienzo cuerpo*/
 .inicio {
-    padding: 10rem 8rem;
+    padding-top: 10rem;
 }
-
+section{
+    padding-left: 4rem;
+    padding-right: 8rem;
+}
 h2 {
     color        : #212F3C;
     font-family  : 'Expletus Sans', cursive;
@@ -156,20 +158,20 @@ h2 {
     border-bottom: #7FB3D5 solid 2px;
 }
 
-h3{
-    color        : #212F3C;
-    font-family  : 'Expletus Sans', cursive;
-    line-height  : 1.5em;
-    font-size    : 1.3rem;
-    transition   : all .5s;
-    display      : flex;
-    align-items  : center;
-    padding      : 2rem;
+h3 {
+    color      : #212F3C;
+    font-family: 'Expletus Sans', cursive;
+    line-height: 1.5em;
+    font-size  : 1.3rem;
+    transition : all .5s;
+    display    : flex;
+    align-items: center;
+    padding    : 2rem;
 }
 
-p{
+p {
     margin-bottom: .3rem;
-    padding-left: 2rem;
+    padding-left : 2rem;
     padding-right: 2rem;
 }
 
@@ -178,15 +180,17 @@ p{
 .etiqueta {
     color: #4A4EAD;
 }
-.m-left2{
+
+.m-left2 {
     margin-left: 2rem;
 }
+
 .codificar {
     background-color: #FFF;
     border          : #2f4355 1px solid;
     border-left     : #2f4355 3px solid;
-    padding: 1rem .5rem;
-    margin: 1rem 2rem;
+    padding         : 1rem .5rem;
+    margin          : 1rem 2rem;
 }
 
 @media screen and (max-width: 1400px) {
@@ -280,6 +284,14 @@ p{
     }
 
     /*Fin hamburguesa*/
+
+    /*secciones*/
+    section{
+        padding-left: 4rem;
+        padding-right: 8rem;
+    }
+
+    /*fin secciones*/
 }
 
 @media screen and (max-width: 380px) {
