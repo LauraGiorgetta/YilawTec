@@ -1,0 +1,54 @@
+
+nav.lateral h2 {
+    height     : 4rem;
+    line-height: 4rem;
+    font-size  : 1.3rem;
+    padding    : 1rem 0;
+    border     : transparent;
+    font-weight: bold;
+    color: #4A4EAD;
+}
+
+nav.lateral {
+    position: fixed;
+    margin-top: 9rem;
+    padding     : 2rem 2rem 0;
+    overflow-y: scroll;
+    height: calc(100vh - 9rem);
+    width: 22rem;
+}
+
+nav.lateral li {
+    text-align   : left;
+    display      : block;
+    margin-bottom: .3rem;
+    padding      : .5rem 1rem;
+    border-radius: 0 1rem 1rem 0rem;
+}
+
+nav.lateral li a{
+    text-decoration: none;
+    color: #212F3C;
+}
+
+nav.lateral li:nth-of-type(even) {
+    border: dashed 1px #7FB3D5;
+}
+
+nav.lateral li:nth-of-type(odd) {
+    background: rgb(197,212,221);
+    background: -moz-linear-gradient(90deg, rgba(197,212,221,1) 0%, rgba(154,190,214,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(197,212,221,1) 0%, rgba(154,190,214,1) 100%);
+    background: linear-gradient(90deg, rgba(197,212,221,1) 0%, rgba(154,190,214,1) 100%);
+}
+section{
+margin-left: 22rem;
+}
+nav.lateral h2::before {
+    content      : url("../svg/logo.svg");
+    padding-top  : 1rem;
+    padding-right: .5rem;
+}
+.inicio{
+    padding-left: 2rem;
+}
