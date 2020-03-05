@@ -52,3 +52,14 @@ nav.lateral h2::before {
 .inicio{
     padding-left: 2rem;
 }
+
+
+@media screen and (max-width: 1000px){
+    nav.lateral{
+        display: none;
+    }
+    section.inicio{
+        margin-left: 0;
+        padding: 7rem 2rem;
+    }
+}
