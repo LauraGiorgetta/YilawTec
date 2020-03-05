@@ -85,9 +85,9 @@ function scrollFunction() {
 
 //responsive
 //agregar divs al nav
-let div = document.createElement('div');
-let nav = document.querySelector('nav');
-let newdiv = nav.insertBefore(div, document.querySelector('ul'));
+const div = document.createElement('div');
+const nav = document.querySelector('nav');
+const newdiv = nav.insertBefore(div, document.querySelector('ul'));
 newdiv.className = 'xmenu';
 newdiv.innerHTML = '<div></div><div></div><div></div>';
 //fin de agregar divs
