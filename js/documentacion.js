@@ -5,16 +5,14 @@ const divfornav = document.createElement('div');
 document.body.appendChild(divfornav);
 
 LateralNav();
-if (h1.className != 'grande') {
-    lateralnav.style.position = '6rem';
-}
+lateralnav.style.transition = 'all .5s'
+window.addEventListener('scroll', () => {
+    HeightNav();
+})
 
 window.addEventListener('resize', () => {
-    LateralNav();
-    if (h1.className != 'grande') {
-        lateralnav.style.top = '6rem';
-    }
-});
+    HeightNav();
+})
 
 function LateralNav() {
     if (window.innerWidth < 1040) {
@@ -36,3 +34,12 @@ function LateralNav() {
     }
 }
 
+function HeightNav(){
+    if (h1.className != 'grande') {
+        lateralnav.style.marginTop = '6rem';
+        lateralnav.style.height = 'calc(100vh - 6rem)';
+    } else{
+        lateralnav.style.marginTop = '9rem';
+        lateralnav.style.height = 'calc(100vh - 9rem)';
+    }
+}
