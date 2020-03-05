@@ -1,3 +1,5 @@
+"use strict"
+
 //Efecto cambiar con scroll
 const h1 = document.querySelector('h1');
 
@@ -20,10 +22,8 @@ window.addEventListener('resize', function () {
         document.querySelector('.xmenu').style.right = '2rem';
         h1.style.fontSize = '2rem';
         h1.className = '';
-    }
-    else {
+    } else {
         h1.className = '';
-
     }
     scrollFunction();
 });
@@ -40,48 +40,37 @@ function scrollFunction() {
                 h1.className = 'mediano';
                 h1.style.fontSize = '2.5rem';
                 h1.className = '';
-
             } else {
                 document.querySelector('header').style.padding = '1.5rem 8rem';
                 h1.style.fontSize = '3rem';
                 h1.className = 'grande';
             }
         };
-        console.log("1400")
-    }
-    else if (window.innerWidth > 1040) {
+    } else if (window.innerWidth > 1040) {
         window.onscroll = function () {
-
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 document.querySelector('header').style.padding = '0 4rem';
+                h1.className = 'mediano';
+                h1.style.fontSize = '2.5rem';
+                h1.className = '';
 
-            }
-
-            else {
+            } else {
                 document.querySelector('header').style.padding = '1.5rem 4rem';
-
+                h1.style.fontSize = '3rem';
+                h1.className = 'grande';
             }
         };
-        console.log("1040")
-    }
-    else if (window.innerWidth < 380) {
+    } else if (window.innerWidth < 380) {
         window.onscroll = function () {
-
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 document.querySelector('header').style.padding = '0 2rem';
                 document.querySelector('.xmenu').style.right = '2rem'
-
-            }
-
-            else {
+            } else {
                 document.querySelector('header').style.padding = '0 2rem';
                 document.querySelector('.xmenu').style.right = '2rem'
             }
         };
-        console.log("380")
-    }
-
-    else {
+    } else {
         h1.style.fontSize = '2rem';
         document.querySelector('header').style.padding = '0 4rem';
         window.onscroll = () => { }
