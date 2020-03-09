@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 46 53" style="enable-background:new 0 0 46 53;" xml:space="preserve">
+<style type="text/css">
+	#casavigas{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<polygon id="casavigas" points="22.5,0.5 44.5,16.5 1.5,16.5 "/>
+<rect x="1.5" y="17.5" id="casavigas" width="43" height="35"/>
+<rect x="17.5" y="36.5" id="casavigas" width="10" height="16"/>
+<rect x="7.5" y="24.5" id="casavigas" width="10" height="6"/>
+<rect x="27.5" y="24.5" id="casavigas" width="10" height="6"/>
+</svg>

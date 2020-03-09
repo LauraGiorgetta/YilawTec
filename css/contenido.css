@@ -1,0 +1,13 @@
+/***********************
+Aca se mandan los estilos del contenido de todas las paginas, sin modifical el contenido de la estructura principal que aplica a todas las paginas.
+Utilizar en lo posible ID para no modificar ningun otro elemento accidentalmente
+************************/
+
+/*index.html*/
+#casavigas{
+    width: 5rem;
+    margin-left: 2rem;
+}
+
+
+/*fin index.html*/
